@@ -1,3 +1,11 @@
+# APP de Apurações dos Resultados das Eleições de 2022
+
+Trata-se de um aplicativo minimalista com o objetivo de apresentar os resultados das eleições de 2022 para presidente, com um botão que atualiza os resultados sempre que clicado.
+
+Abaixo está o modelo de layout do aplicativo.
+
+![Captura de tela 2022-10-04 152345](https://user-images.githubusercontent.com/79734585/193897716-d66d9587-7bff-4830-afaf-214b727654c0.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
