@@ -1,7 +1,7 @@
 function Header() {
     return (
-        <div className="header">
-            Header
+        <div className="w-full h-80 bg-green-600">
+            <span className="text-5xl text-white">Teste</span>
         </div>
     )
 }
