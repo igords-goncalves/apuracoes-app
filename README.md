@@ -2,6 +2,10 @@
 
 Trata-se de um aplicativo minimalista com o objetivo de apresentar os resultados das eleições de 2022 para presidente, com um botão que atualiza os resultados sempre que clicado.
 
+Dados do TSE https://dadosabertos.tse.jus.br/dataset
+
+API utilizada https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json
+
 Abaixo está o modelo de layout do aplicativo.
 
 ![Captura de tela 2022-10-04 152345](https://user-images.githubusercontent.com/79734585/193897716-d66d9587-7bff-4830-afaf-214b727654c0.jpg)
