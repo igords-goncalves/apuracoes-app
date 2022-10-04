@@ -8,7 +8,7 @@ API utilizada https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplifica
 
 Abaixo está o modelo de layout do aplicativo.
 
-![Captura de tela 2022-10-04 152345](https://user-images.githubusercontent.com/79734585/193897716-d66d9587-7bff-4830-afaf-214b727654c0.jpg)
+![image](https://user-images.githubusercontent.com/79734585/193943875-a21bc90d-11b4-4d1b-9a93-b5a84add46ae.png)
 
 # Getting Started with Create React App
 
