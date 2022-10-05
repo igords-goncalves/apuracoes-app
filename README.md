@@ -8,7 +8,9 @@ Dados do TSE https://dadosabertos.tse.jus.br/dataset
 
 API utilizada https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json
 
-Abaixo está o modelo de layout do aplicativo.
+Abaixo está o modelo de layout do aplicativo com toda parte de estilo feita com Tailwind CSS
+
+https://tailwindcss.com/
 
 ![image](https://user-images.githubusercontent.com/79734585/193943875-a21bc90d-11b4-4d1b-9a93-b5a84add46ae.png)
 
