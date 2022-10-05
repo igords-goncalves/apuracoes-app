@@ -4,13 +4,18 @@ function Header() {
     return (
         <div className="
             w-full 
-            h-60 
-            bg-[#158A64] 
-            flex 
+            h-1/2
+            bg-[#158A64]
+            px-20 py-10
+            flex
             items-center 
-            justify-between"
+            flex-col
+            justify-between
+            md:flex-row"
         >
-            <div className="ml-16">
+            <div className="
+                text-center md:text-left"
+            >
                 <h1 className="text-4xl font-bold text-white mb-3">
                     Eleiçoes 2022
                 </h1>
@@ -23,17 +28,16 @@ function Header() {
             </div>
             <Button
                 label="1º TURNO"
+                mt="mt-8 md:mt-0"
                 option="
-                mr-16 
                 rounded-full 
                 border-none 
-                bg-[#177353] 
+                bg-[#177353]
                 px-10 
                 py-3 
-                text-3xl 
+                text-2xl md:text-3xl 
                 font-medium 
-                text-white 
-                sm:w-auto"
+                text-white"
             />
         </div>
     );
