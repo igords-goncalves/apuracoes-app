@@ -5,6 +5,7 @@ import candidateB from  '../../assets/img/bolsonaro.png'
 import candidateC from  '../../assets/img/lula.png'
 import candidateD from  '../../assets/img/simone.png'
 import candidateE from  '../../assets/img/soraya.png'
+import Data from "./data/Data";
 
 function Main() {
     return (
@@ -21,6 +22,10 @@ function Main() {
             <Image img={candidateC}/>
             <Image img={candidateD}/>
             <Image img={candidateE}/>
+
+            <div>
+                <Data />
+            </div>
         </main>
     )
 }
