@@ -16,27 +16,28 @@ function Data(props) {
             .then((res) => res.json())
             .then((data) => {
                 const candidates = data.cand;
-
-                return candidates.map((obj) => {
-                    return {
-                        id: obj.seq,
-                        votes: obj.vap,
-                        percentOfVotes: obj.pvap,
-                        party: obj.cc,
-                        number: obj.n,
-                        name: obj.nm,
-                    }
-                })
+                return candidates;
             })
-            // console.log(datas[0].name)
-            .then(datas => console.log(datas[0].name))
+            .then((datas) => {
+                setId(datas.map(({ seq }) => seq));
+                setVotes(datas.map(({ vap }) => vap));
+                setPercentOfVotes(datas.map(({ pvap }) => pvap));
+                setParty(datas.map(({ cc }) => cc));
+                setNumber(datas.map(({ n }) => n));
+                setName(datas.map(({ nm }) => nm));
+            });
     }, []);
 
     return (
         <div>
-            <p>{name}</p>
+            <ul>
+                <li>{votes[0]}</li>
+                <li>{percentOfVotes[0]}</li>
+                <li>{party[0]}</li>
+                <li>{number[0]} - {name[0]}</li>
+            </ul>
         </div>
-    );
+    )
 }
 
 export default Data;
