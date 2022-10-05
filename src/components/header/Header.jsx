@@ -4,7 +4,7 @@ function Header() {
     return (
         <div className="
             w-full 
-            h-64 
+            h-60 
             bg-[#158A64] 
             flex 
             items-center 
