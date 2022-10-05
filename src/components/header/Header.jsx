@@ -1,8 +1,9 @@
+import Button from "../button/Button";
+
 function Header() {
     return (
-        <div className="w-full h-80 bg-green-500">
-
-            <div className="pt-10 pl-10">
+        <div className="w-full h-80 bg-green-500 flex items-center justify-between">
+            <div className="ml-16">
                 <h1 className="text-5xl font-bold text-white mb-3">
                     Eleiçoes 2022
                 </h1>
@@ -13,6 +14,20 @@ function Header() {
                     02/10/2022
                 </h3>
             </div>
+            <Button
+                label="1º TURNO"
+                option="
+                mr-16 
+                rounded-full 
+                border-none 
+                bg-green-700 
+                px-10 
+                py-3 
+                text-3xl 
+                font-medium 
+                text-white 
+                sm:w-auto"
+            />
         </div>
     );
 }
