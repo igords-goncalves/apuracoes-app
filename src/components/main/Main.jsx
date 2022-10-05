@@ -14,6 +14,7 @@ function Main() {
             flex-col
             items-center
             md:flex-row
+            md:justify-center
             ">
             <Image img={candidateA}/>
             <Image img={candidateB}/>
