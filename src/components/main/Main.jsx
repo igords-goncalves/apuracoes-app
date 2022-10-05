@@ -1,7 +1,9 @@
+import Image from "./image/Image";
+
 function Main(props) {
     return (
         <main>
-            <h1>Content</h1>
+            <Image />
         </main>
     )
 }
