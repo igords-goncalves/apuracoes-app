@@ -2,7 +2,14 @@ import Button from "../button/Button";
 
 function Header() {
     return (
-        <div className="w-full h-64 bg-[#158A64] flex items-center justify-between">
+        <div className="
+            w-full 
+            h-64 
+            bg-[#158A64] 
+            flex 
+            items-center 
+            justify-between"
+        >
             <div className="ml-16">
                 <h1 className="text-4xl font-bold text-white mb-3">
                     Eleiçoes 2022
