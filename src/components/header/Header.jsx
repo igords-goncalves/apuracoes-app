@@ -1,8 +1,10 @@
+import { Fade } from "react-awesome-reveal";
 import Button from "../button/Button";
 
 function Header() {
     return (
-        <div className="
+        <div
+            className="
             w-full 
             h-1/2
             bg-[#158A64]
@@ -13,7 +15,8 @@ function Header() {
             justify-between
             md:flex-row"
         >
-            <div className="
+            <div
+                className="
                 text-center md:text-left"
             >
                 <h1 className="text-4xl font-bold text-white mb-3">
@@ -26,10 +29,11 @@ function Header() {
                     02/10/2022
                 </h3>
             </div>
-            <Button
-                label="1º TURNO"
-                mt="mt-8 md:mt-0"
-                option="
+            <Fade delay={1}>
+                <Button
+                    label="1º TURNO"
+                    mt="mt-8 md:mt-0"
+                    option="
                 rounded-full 
                 border-none 
                 bg-[#177353]
@@ -38,7 +42,8 @@ function Header() {
                 text-2xl md:text-3xl 
                 font-medium 
                 text-white"
-            />
+                />
+            </Fade>
         </div>
     );
 }
