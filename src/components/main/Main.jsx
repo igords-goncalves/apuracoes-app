@@ -6,6 +6,7 @@ import candidateC from  '../../assets/img/lula.png'
 import candidateD from  '../../assets/img/simone.png'
 import candidateE from  '../../assets/img/soraya.png'
 import Data from "./data/Data";
+import Card from "./Card";
 
 function Main() {
     return (
@@ -17,7 +18,7 @@ function Main() {
             md:flex-row
             md:justify-center
             ">
-            <Image img={candidateA}/>
+            {/* <Image img={candidateA}/>
             <Image img={candidateB}/>
             <Image img={candidateC}/>
             <Image img={candidateD}/>
@@ -25,7 +26,8 @@ function Main() {
 
             <div>
                 <Data />
-            </div>
+            </div> */}
+            <Card />
         </main>
     )
 }

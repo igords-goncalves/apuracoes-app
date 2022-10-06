@@ -33,7 +33,7 @@ function Data(props) {
             <ul>
                 <li>{votes[0]}</li>
                 <li>{percentOfVotes[0]}</li>
-                <li>{party[0]}</li>
+                {/* <li>{party[0]}</li> */}
                 <li>{number[0]} - {name[0]}</li>
             </ul>
         </div>
