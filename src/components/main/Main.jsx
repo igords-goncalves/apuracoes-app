@@ -29,6 +29,7 @@ function Main() {
                 text-2xl md:text-3xl 
                 font-medium 
                 text-white"
+                // TODO: Create a func onClik to call results again
             />
         </div>
         </>
