@@ -45,7 +45,8 @@ function Card() {
                 className="
             flex
             flex-col
-            items-center
+            mb-10
+            md:mx-10
             "
             >
                 <Image img={candidateA} />
@@ -60,7 +61,9 @@ function Card() {
                 className="
             flex
             flex-col
-            items-center
+            mb-10
+            md:mx-10
+            
             "
             >
                 <Image img={candidateB} />
@@ -75,7 +78,8 @@ function Card() {
                 className="
             flex
             flex-col
-            items-center
+            mb-10
+            md:mx-10
             "
             >
                 <Image img={candidateC} />
@@ -90,7 +94,8 @@ function Card() {
                 className="
             flex
             flex-col
-            items-center
+            mb-10
+            md:mx-10
             "
             >
                 <Image img={candidateD} />
@@ -105,7 +110,8 @@ function Card() {
                 className="
             flex
             flex-col
-            items-center
+            mb-10
+            md:mx-10
             "
             >
                 <Image img={candidateE} />
