@@ -1,17 +1,17 @@
 function Data(props) {
     return (
-        <div className="px-10">
+        <div>
             <ul>
-                <li className="font-normal text-sm text-gray-900">
+                <li className="font-normal text-sm text-gray-800">
                     {props.votes}
                 </li>
-                <li className="font-semibold text-2xl text-gray-800">
+                <li className="font-semibold text-2xl text-gray-700">
                     {props.percent}%
                 </li>
-                <li className="font-light text-base text-gray-900">
+                <li className="font-light text-base text-gray-800">
                     PT
                 </li>
-                <li className="font-semibold text-sm text-gray-900">
+                <li className="font-semibold text-sm text-gray-800">
                     {props.number} - {props.name}
                 </li>
             </ul>
