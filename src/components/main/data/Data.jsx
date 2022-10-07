@@ -11,6 +11,30 @@ function Data(props) {
     const [number, setNumber] = useState(0);
     const [name, setName] = useState("");
 
+    function getArryId(ids) {
+        return ids.map(({ seq }) => Number(seq));
+    }
+
+    function getArryVotes(votes) {
+        return votes.map(({ vap }) => Number(vap));
+    }
+
+    function getArrayPercentOfVotes(percent) {
+        return percent.map(({ pvap }) => parseFloat(pvap).toFixed(2));
+    }
+
+    function getArrayParty(party) {
+        party.map(({ cc }) => cc);
+    }
+
+    function getArryNumber(number) {
+        return number.map(({ n }) => Number(n));
+    }
+
+    function getArrayNames(name) {
+        return name.map(({ nm }) => nm);
+    }
+
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
@@ -19,12 +43,12 @@ function Data(props) {
                 return candidates;
             })
             .then((datas) => {
-                setId(datas.map(({ seq }) => seq));
-                setVotes(datas.map(({ vap }) => vap));
-                setPercentOfVotes(datas.map(({ pvap }) => pvap));
-                setParty(datas.map(({ cc }) => cc));
-                setNumber(datas.map(({ n }) => n));
-                setName(datas.map(({ nm }) => nm));
+                setId(getArryId(datas));
+                setVotes(getArryVotes(datas));
+                setPercentOfVotes(getArrayPercentOfVotes(datas));
+                setParty(getArrayParty(datas));
+                setNumber(getArryNumber(datas));
+                setName(getArrayNames(datas));
             });
     }, []);
 
@@ -32,12 +56,14 @@ function Data(props) {
         <div>
             <ul>
                 <li>{votes[0]}</li>
-                <li>{percentOfVotes[0]}</li>
+                <li>{percentOfVotes[0]}%</li>
                 {/* <li>{party[0]}</li> */}
-                <li>{number[0]} - {name[0]}</li>
+                <li>
+                    {number[0]} - {name[0]}
+                </li>
             </ul>
         </div>
-    )
+    );
 }
 
 export default Data;
