@@ -1,13 +1,8 @@
-import Image from "./image/Image";
-
-import candidateA from  '../../assets/img/ciro.png'
-import candidateB from  '../../assets/img/bolsonaro.png'
-import candidateC from  '../../assets/img/lula.png'
-import candidateD from  '../../assets/img/simone.png'
-import candidateE from  '../../assets/img/soraya.png'
-import Data from "./data/Data";
+import Card from "./data/Card";
 
 function Main() {
+
+    
     return (
         <main className="
             flex 
@@ -16,18 +11,11 @@ function Main() {
             items-center
             md:flex-row
             md:justify-center
-            ">
-            <Image img={candidateA}/>
-            <Image img={candidateB}/>
-            <Image img={candidateC}/>
-            <Image img={candidateD}/>
-            <Image img={candidateE}/>
-
-            <div>
-                <Data />
-            </div>
+            "
+        >
+            <Card />
         </main>
-    )
+    );
 }
 
 export default Main;
