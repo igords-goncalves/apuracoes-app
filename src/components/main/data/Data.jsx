@@ -9,7 +9,7 @@ function Data(props) {
                     {props.percent}%
                 </li>
                 <li className="font-light text-base text-gray-800">
-                    PT
+                    {props.party}
                     {/* TODO:Create a logic to get the main party  */}
                 </li>
                 <li className="font-semibold text-sm text-gray-800">

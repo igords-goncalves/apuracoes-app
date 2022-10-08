@@ -53,6 +53,7 @@ function Card() {
                 <Data
                     votes={candidate0.vap}
                     percent={candidate0.pvap}
+                    party="PT"
                     number={candidate0.n}
                     name={candidate0.nm}
                 />
@@ -70,6 +71,7 @@ function Card() {
                 <Data
                     votes={candidate1.vap}
                     percent={candidate1.pvap}
+                    party="PL"
                     number={candidate1.n}
                     name={candidate1.nm}
                 />
@@ -86,6 +88,7 @@ function Card() {
                 <Data
                     votes={candidate2.vap}
                     percent={candidate2.pvap}
+                    party="MDB"
                     number={candidate2.n}
                     name={candidate2.nm}
                 />
@@ -102,6 +105,7 @@ function Card() {
                 <Data
                     votes={candidate3.vap}
                     percent={candidate3.pvap}
+                    party="PDT"
                     number={candidate3.n}
                     name={candidate3.nm}
                 />
@@ -118,6 +122,7 @@ function Card() {
                 <Data
                     votes={candidate4.vap}
                     percent={candidate4.pvap}
+                    party="UNIÃO"
                     number={candidate4.n}
                     name={candidate4.nm}
                 />
