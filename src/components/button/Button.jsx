@@ -3,7 +3,9 @@ function Button(props) {
         <div className={props.mt}>
             <button 
                 type="button" 
-                className={props.option}>
+                className={props.option}
+                onClick={props.reload}
+                >
                     {props.label}
             </button>
         </div>
