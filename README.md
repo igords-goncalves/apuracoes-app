@@ -12,7 +12,7 @@ Abaixo está o modelo de layout do aplicativo com toda parte de estilo feita com
 
 https://tailwindcss.com/
 
-![image](https://user-images.githubusercontent.com/79734585/194713411-ade117cc-bfd7-4137-a84b-fed2a309648a.png)
+![image](https://user-images.githubusercontent.com/79734585/194718022-8d98b5b2-4a65-43c4-b057-12b4b788f1f2.png)
 
 # Getting Started with Create React App
 
