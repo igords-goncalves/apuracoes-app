@@ -2,7 +2,7 @@
 
 https://apuracoes-eleicoes-2022.netlify.app/
 
-Trata-se de um aplicativo minimalista com o objetivo de apresentar os resultados das eleições de 2022 para presidente, com um botão que atualiza os resultados sempre que clicado.
+Trata-se de um aplicativo React minimalista com o objetivo de apresentar os resultados das eleições de 2022 para presidente, com um botão que atualiza os resultados sempre que clicado.
 
 ![image](https://user-images.githubusercontent.com/79734585/193944948-30cffaf3-323b-4dc7-b89b-2e439bc6b5bc.png)
 
