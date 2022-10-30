@@ -40,7 +40,7 @@ function Main() {
                 text-2xl md:text-3xl 
                 font-medium 
                 text-white"
-                    reload={() => refreshPage()}
+                    callBack={() => refreshPage()}
                 />
             </div>
         </>
