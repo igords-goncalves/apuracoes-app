@@ -4,13 +4,18 @@ import Button from "../button/Button";
 function Header() {
 
     const [buttonLabel, setButtonLabel] = useState("1º TURNO")
+    const [date, setDate] = useState(undefined)
 
-    function setLabel() {
+    function setLabelAndDate() {
         if(buttonLabel === '1º TURNO') {
-            return setButtonLabel('2º TURNO')
+           setButtonLabel('2º TURNO')
+           setDate('30/10/2022')
+        } else {
+            setButtonLabel('1º TURNO')
+            setDate('02/10/2022')
         }
-        return setButtonLabel('1º TURNO')
     }
+
 
     return (
         <div
@@ -36,11 +41,11 @@ function Header() {
                     Geral Ordinária
                 </h2>
                 <h3 className="text-xl font-black text-[#177353]">
-                    02/10/2022
+                    {date}
                 </h3>
             </div>
             <Button
-                callBack={() => setLabel()}
+                callBack={() => setLabelAndDate()}
                 label={buttonLabel}
                 mt="mt-8 md:mt-0"
                 option="
