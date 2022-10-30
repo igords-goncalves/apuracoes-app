@@ -19,10 +19,14 @@ function Card() {
     const url =
         "https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json";
 
+
+    const urlSecondRound =
+        "https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json" 
+
     const [candidates, setCandidates] = useState([]);
 
     useEffect(() => {
-        fetch(url)
+        fetch(urlSecondRound)
             .then((res) => res.json())
             .then((data) => {
                 return setCandidates(data.cand);
