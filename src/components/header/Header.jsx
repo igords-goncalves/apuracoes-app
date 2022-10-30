@@ -1,6 +1,17 @@
+import { useState } from "react";
 import Button from "../button/Button";
 
 function Header() {
+
+    const [buttonLabel, setButtonLabel] = useState("1º TURNO")
+
+    function setLabel() {
+        if(buttonLabel === '1º TURNO') {
+            return setButtonLabel('2º TURNO')
+        }
+        return setButtonLabel('1º TURNO')
+    }
+
     return (
         <div
             className="
@@ -29,7 +40,8 @@ function Header() {
                 </h3>
             </div>
             <Button
-                label="1º TURNO"
+                callBack={() => setLabel()}
+                label={buttonLabel}
                 mt="mt-8 md:mt-0"
                 option="
                 rounded-full 

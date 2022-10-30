@@ -4,7 +4,7 @@ function Button(props) {
             <button 
                 type="button" 
                 className={props.option}
-                onClick={props.reload}
+                onClick={props.callBack}
                 >
                     {props.label}
             </button>
