@@ -4,7 +4,7 @@ import Button from "../button/Button";
 function Header() {
 
     const [buttonLabel, setButtonLabel] = useState("1º TURNO")
-    const [date, setDate] = useState(undefined)
+    const [date, setDate] = useState('02/10/2022')
 
     function setLabelAndDate() {
         if(buttonLabel === '1º TURNO') {
