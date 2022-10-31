@@ -26,7 +26,7 @@ function Card() {
     const [candidates, setCandidates] = useState([]);
 
     useEffect(() => {
-        fetch(urlSecondRound)
+        fetch(url)
             .then((res) => res.json())
             .then((data) => {
                 return setCandidates(data.cand);
