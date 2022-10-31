@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 import Button from "../button/Button";
 import Card from "./data/Card";
+import CardSecondRound from "./data/CardSecondRound";
 
 function Main() {
 
@@ -23,7 +24,8 @@ function Main() {
             md:justify-center
             "
                 >
-                    <Card />
+                    {/* <Card /> */}
+                    <CardSecondRound />
                 </main>
             </Fade>
 
