@@ -11,8 +11,6 @@ function CardSecondRound() {
     const [candidate0, setCandidate0] = useState({});
     const [candidate1, setCandidate1] = useState({});
 
-    const [party, setParty] = useState("")
-
     const urlSecondRound = 
         "https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json" 
 
