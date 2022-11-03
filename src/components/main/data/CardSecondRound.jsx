@@ -11,6 +11,8 @@ function CardSecondRound() {
     const [candidate0, setCandidate0] = useState({});
     const [candidate1, setCandidate1] = useState({});
 
+    const [party, setParty] = useState("")
+
     const urlSecondRound = 
         "https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json" 
 
@@ -27,9 +29,18 @@ function CardSecondRound() {
     useEffect(() => {
         candidates.map((curr, i, arr) => {
             setCandidate0(arr[0]);
-            return setCandidate1(arr[1]);
+            setCandidate1(arr[1]);
         });
     });
+
+    function getParty(string) {
+        try {
+            if(!string) return
+            return string.split('-')[0]
+        } catch (error) {
+            throw error
+        }
+    }
 
     return (
         <>
@@ -45,7 +56,7 @@ function CardSecondRound() {
                 <Data
                     votes={candidate0.vap}
                     percent={candidate0.pvap}
-                    party="PT"
+                    party={getParty(candidate0.cc)}
                     number={candidate0.n}
                     name={candidate0.nm}
                 />
@@ -63,7 +74,7 @@ function CardSecondRound() {
                 <Data
                     votes={candidate1.vap}
                     percent={candidate1.pvap}
-                    party="PL"
+                    party={getParty(candidate1.cc)}
                     number={candidate1.n}
                     name={candidate1.nm}
                 />
