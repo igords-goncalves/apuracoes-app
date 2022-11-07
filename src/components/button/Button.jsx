@@ -1,7 +1,7 @@
 function Button(props) {
     return (
         <div className={props.mt}>
-            <button 
+            <button
                 type="button" 
                 className={props.option}
                 onClick={props.callBack}

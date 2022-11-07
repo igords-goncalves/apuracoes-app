@@ -11,6 +11,18 @@ function Main() {
         window.location.reload(true)
     }
 
+    function getRound(label) {
+        if(label === "1º TURNO") {
+            return (
+                <Card />
+            )
+        } else {
+            return (
+                <CardSecondRound />
+            )
+        }
+    }
+
     return (
         <>
             <Fade>
@@ -23,12 +35,11 @@ function Main() {
             md:flex-row
             md:justify-center
             "
-                >
-                    {/* <Card /> */}
-                    <CardSecondRound />
+                > 
+                    {getRound('1º TURNO')}
                 </main>
             </Fade>
-
+        {/* {console.log(roundButton)} */}
             <div className="flex items-center justify-center">
                 <Button
                     label="Atualizar"
