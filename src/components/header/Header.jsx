@@ -1,6 +1,21 @@
+import { useState } from "react";
 import Button from "../button/Button";
 
-function Header() {
+function Header(props) {
+
+    const [buttonLabel, setButtonLabel] = useState("1º TURNO")
+    const [date, setDate] = useState('02/10/2022')
+    
+    function setLabelAndDate() {
+        if(buttonLabel === '1º TURNO') {
+           setButtonLabel('2º TURNO')
+           setDate('30/10/2022')
+        } else {
+            setButtonLabel('1º TURNO')
+            setDate('02/10/2022')
+        }
+    }
+
     return (
         <div
             className="
@@ -25,11 +40,13 @@ function Header() {
                     Geral Ordinária
                 </h2>
                 <h3 className="text-xl font-black text-[#177353]">
-                    02/10/2022
+                    {date}
                 </h3>
             </div>
             <Button
-                label="1º TURNO"
+                callBack={() => setLabelAndDate()}
+                label={props.onChange(buttonLabel)}
+                title={buttonLabel}
                 mt="mt-8 md:mt-0"
                 option="
                 rounded-full 
