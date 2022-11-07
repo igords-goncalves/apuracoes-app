@@ -6,7 +6,7 @@ function Button(props) {
                 className={props.option}
                 onClick={props.callBack}
                 >
-                    {props.label}
+                    {props.title}
             </button>
         </div>
     );

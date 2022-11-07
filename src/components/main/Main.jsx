@@ -4,9 +4,8 @@ import Button from "../button/Button";
 import Card from "./data/Card";
 import CardSecondRound from "./data/CardSecondRound";
 
-function Main() {
+function Main(props) {
 
-    // Provisory solution to render results if it changing from API
     function refreshPage() {
         window.location.reload(true)
     }
@@ -36,13 +35,13 @@ function Main() {
             md:justify-center
             "
                 > 
-                    {getRound('1º TURNO')}
+                    {getRound(props.label)}
                 </main>
             </Fade>
-        {/* {console.log(roundButton)} */}
+
             <div className="flex items-center justify-center">
                 <Button
-                    label="Atualizar"
+                    title="Atualizar"
                     mt="mt-8 md:mt-0"
                     option="
                 rounded-full 
