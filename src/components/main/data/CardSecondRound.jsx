@@ -11,26 +11,27 @@ function CardSecondRound() {
     const [candidate0, setCandidate0] = useState({});
     const [candidate1, setCandidate1] = useState({});
 
-    const urlSecondRound = 
+    const url = 
         "https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json" 
 
     const [candidates, setCandidates] = useState([]);
 
-    useEffect(() => {
-        fetch(urlSecondRound)
+    function fetchData(url) {
+        fetch(url)
             .then((res) => res.json())
             .then((data) => {
                 return setCandidates(data.cand);
             });
-    }, []);
+    }
 
-    useEffect(() => {
+    function getCandidates() {
         candidates.map((curr, i, arr) => {
             setCandidate0(arr[0]);
             setCandidate1(arr[1]);
+            return null
         });
-    });
-
+    }
+    
     function getParty(string) {
         try {
             if(!string) return
@@ -39,6 +40,11 @@ function CardSecondRound() {
             throw error
         }
     }
+    
+    useEffect(() => fetchData(url), []);
+
+    useEffect(() => getCandidates());
+
 
     return (
         <>

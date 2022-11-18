@@ -21,24 +21,26 @@ function Card() {
 
     const [candidates, setCandidates] = useState([]);
 
-    useEffect(() => {
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                return setCandidates(data.cand);
-            });
-    }, []);
 
-    useEffect(() => {
+    function fetchData(url) {
+        fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            return setCandidates(data.cand);
+        });
+    }
+
+    function getCandidates() {
         candidates.map((curr, i, arr) => {
             setCandidate0(arr[0]);
             setCandidate1(arr[1]);
             setCandidate2(arr[2]);
             setCandidate3(arr[3]);
             setCandidate4(arr[4]);
+            return null
         });
-    });
-
+    }
+    
     function getParty(string) {
         try {
             if(!string) return
@@ -47,6 +49,11 @@ function Card() {
             throw error
         }
     }
+
+    useEffect(() => fetchData(url), []);
+
+    useEffect(() => getCandidates());
+
 
     return (
         <>
