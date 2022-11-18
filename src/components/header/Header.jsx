@@ -53,7 +53,8 @@ function Header(props) {
                 border-none 
                 bg-[#177353]
                 px-10 
-                py-3 
+                py-3
+                w-60 
                 text-2xl md:text-3xl 
                 font-medium 
                 text-white"
