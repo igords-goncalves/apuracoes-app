@@ -1,16 +1,22 @@
 # APP de Apurações dos Resultados das Eleições de 2022
 
-https://apuracoes-eleicoes-2022.netlify.app/
-
 Trata-se de um aplicativo React minimalista com o objetivo de apresentar os resultados das eleições de 2022 para presidente, com um botão que atualiza os resultados sempre que clicado.
-
-![image](https://user-images.githubusercontent.com/79734585/193944948-30cffaf3-323b-4dc7-b89b-2e439bc6b5bc.png)
 
 Dados do TSE https://dadosabertos.tse.jus.br/dataset
 
+O aplicativo está consumindo uma API disponibilizada pelo TSE.
+
 API utilizada https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json
 
-Abaixo está o modelo de layout do aplicativo com toda parte de estilo feita com Tailwind CSS https://tailwindcss.com/
+Abaixo está o modelo de layout do aplicativo todo contruído no figma com toda parte de estilo feita com Tailwind CSS 
+
+Figma: https://www.figma.com/file/Kvu8piwHTKX1OsNKhFxII1/Apura%C3%A7%C3%B5es-App?node-id=3%3A99&t=l6CoXCAa9eu92ejd-1
+
+Tailwind: https://tailwindcss.com/
+
+Todo o deploy do site foi feito no netlify
+
+https://apuracoes-eleicoes-2022.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/79734585/194718022-8d98b5b2-4a65-43c4-b057-12b4b788f1f2.png)
 
