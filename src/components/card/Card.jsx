@@ -21,7 +21,7 @@ function Card() {
 
     const [candidates, setCandidates] = useState([]);
 
-
+    
     function fetchData(url) {
         fetch(url)
         .then((res) => res.json())
