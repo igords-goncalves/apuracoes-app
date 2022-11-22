@@ -1,14 +1,13 @@
 import axios from 'axios'
+import { useEffect } from 'react'
 
-const api = axios.create({
-    baseURL: process.env.REACT_APP_TSE1ROUNDAPI
-})
+export const useApi = () => {
 
-export const getData = async () => {
-    try {
-        const resp = await axios.get(api)
-        console.log(resp)
-    } catch (error) {
-        console.log(error)
-    }
+    const baseURL = process.env.REACT_APP_TSE1ROUNDAPI
+
+    useEffect(() => {
+        axios.get(baseURL)
+         .then(response => console.log(response))
+         .catch(error => console.log('teste' + error))
+    }, [baseURL])
 }

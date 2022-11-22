@@ -6,22 +6,15 @@ import candidateB from "../../assets/img/bolsonaro.png";
 import Data from "../data/Data";
 
 import { useEffect, useState } from "react";
+import { useApi } from "../../hooks/useApi";
 
 function CardSecondRound() {
     const [candidate0, setCandidate0] = useState({});
     const [candidate1, setCandidate1] = useState({});
 
-    const baseURL = process.env.REACT_APP_TSE2ROUNDAPI
-
     const [candidates, setCandidates] = useState([]);
 
-    function fetchData(url) {
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                return setCandidates(data.cand);
-            });
-    }
+    const api = useApi()
 
     function getCandidates() {
         candidates.map((curr, i, arr) => {
@@ -39,10 +32,8 @@ function CardSecondRound() {
             throw error
         }
     }
-    
-    useEffect(() => fetchData(baseURL), []);
 
-    useEffect(() => getCandidates());
+    useEffect(() => getCandidates());   
 
 
     return (
