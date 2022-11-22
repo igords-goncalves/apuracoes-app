@@ -1,5 +1,3 @@
-import { Fade } from "react-awesome-reveal";
-
 import Card from "./data/Card";
 import CardSecondRound from "./data/CardSecondRound";
 
@@ -11,14 +9,13 @@ function Main(props) {
             )
         } else {
             return (
-                <CardSecondRound />
+                    <CardSecondRound />
             )
         }
     }
 
     return (
         <>
-            <Fade>
                 <main
                     className="
             flex 
@@ -31,7 +28,6 @@ function Main(props) {
                 > 
                     {getRound(props.label)}
                 </main>
-            </Fade>
         </>
     );
 }
