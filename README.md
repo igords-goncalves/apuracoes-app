@@ -18,7 +18,15 @@ Todo o deploy do site foi feito no netlify
 
 https://apuracoes-eleicoes-2022.netlify.app/
 
-![image](https://user-images.githubusercontent.com/79734585/194718022-8d98b5b2-4a65-43c4-b057-12b4b788f1f2.png)
+
+## Tela primeiro turno
+
+![layout second-round](https://user-images.githubusercontent.com/79734585/203184183-658c2aa3-6d7c-4bed-b373-0e1db5a20cb6.png)
+
+## Tela segundo turno
+
+![layout first-round](https://user-images.githubusercontent.com/79734585/203184376-1ced84f7-a7c7-41be-8e13-bbe4bd635126.png)
+
 
 # Getting Started with Create React App
 
